@@ -1,0 +1,38 @@
+/**
+ * OOPSBannerApp UC3 - OOPS Banner Application (Use Case 3)
+ * This version uses String.join() instead of + operator
+ * to construct each line of the banner.
+ * 
+ * @author Developer
+ * @version 3.0
+ */
+
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        // Each println builds one full row of O O P S
+        // Using String.join("", ...) for better efficiency
+
+        System.out.println(String.join("",
+                "   ***   ", "   ***   ", "  ****** ", "  ****** "));
+        
+        System.out.println(String.join("",
+                "  **   ** ", "  **   ** ", "  **   ** ", " **     "));
+        
+        System.out.println(String.join("",
+                " **     **", " **     **", "  **   ** ", " **     "));
+        
+        System.out.println(String.join("",
+                " **     **", " **     **", "  ****** ", "  *****  "));
+        
+        System.out.println(String.join("",
+                " **     **", " **     **", "  **      ", "      ** "));
+        
+        System.out.println(String.join("",
+                "  **   ** ", "  **   ** ", "  **      ", "      ** "));
+        
+        System.out.println(String.join("",
+                "   ***   ", "   ***   ", "  **      ", " ******  "));
+    }
+}
